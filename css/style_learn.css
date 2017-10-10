@@ -1,0 +1,100 @@
+
+
+
+.learn_wrapper {
+	display: flex;
+	flex-direction: column;
+	background-color: lightgrey;
+//	border: 1px solid red;
+}
+
+
+#learn_hdg h1 {
+	font-size: 4rem;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 4rem;
+}
+
+.learn_row {
+	display: flex;
+	margin: 2rem 3rem;
+	justify-content: center;
+//	border: 1px solid blue;
+	flex-wrap:  wrap;
+}
+
+.learn_mobile {
+	display: none;
+}
+
+.learn_course {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 2rem;
+	width: 30%;
+//	border: 1px solid green;
+	background-color: #fffff0;
+}
+
+
+.learn_course_pic img {
+	width: 100%;
+	height: auto;
+}
+
+.learn_course_text {
+	background-color: #fffff0;
+
+}
+
+.learn_course_text h1 {
+	font-size: 3rem;	
+	letter-spacing: 2px;
+	margin: 2rem 2rem 1rem 2rem;
+	font-weight: bold;
+}
+
+.learn_course_text h2 {
+	font-size: 2rem;
+	letter-spacing: 1px;
+	margin: 1rem 2rem;
+}
+ 
+ .learn_course_text p {
+	margin-left: 2rem;	
+//	border: 1px solid orange;
+}
+
+.learn_course_text p:last-child {
+	padding-bottom: 3rem;
+}
+
+.learn_mobile {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+.learn_mobile ul li {
+	background-color: #9b9b9b;
+	padding: 2rem 0rem 3rem 2rem;
+	font-size: 2rem;
+	margin: 0.5rem 1rem;
+//	border: 1px solid red;
+}
+
+
+@media only screen and (max-width:480px) {
+	.learn_row {
+		display: none;
+	}
+	.learn_mobile {
+		display: block;
+	}
+
+	.learn_wrapper {
+		background-color: #fffff0;
+	}
+}	
